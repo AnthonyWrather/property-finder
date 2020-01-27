@@ -1,0 +1,50 @@
+<div class="property-main-photo" style="background-image:url('<%= property_photo_url @property %>')">
+  <div class="photo-overlay">
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <p class="mb-0"><%= @property.address %></p>
+      <p class="h2">For Sale</p>
+    </div>
+    <div class="col-6">
+      
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <p>
+        <strong>Name:</strong>
+        <%= @property.name %>
+      </p>
+
+      <p>
+        <strong>Address:</strong>
+        <%= @property.address %>
+      </p>
+
+      <p>
+        <strong>Price:</strong>
+        <%= @property.price %>
+      </p>
+
+      <p>
+        <strong>Rooms:</strong>
+        <%= @property.rooms %>
+      </p>
+
+      <p>
+        <strong>Bathroom:</strong>
+        <%= @property.bathroom %>
+      </p>
+
+    </div>
+
+    <div class="col-4">
+      <%= render "properties/agent_details" %>
+    </div>
+  </div>
+</div>
